@@ -1,0 +1,22 @@
+@use "../../../App.module.scss";
+
+.principal{
+    display: flex;
+    height: 5em;
+    margin: 1em;
+    background-color:App.$cinza;
+}
+
+.tituloCard{
+    font-weight: 600;
+}
+
+.quantidade{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.quantidadeTexto{
+    font-weight: 600;
+}
