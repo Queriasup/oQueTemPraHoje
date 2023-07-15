@@ -13,7 +13,7 @@ export default function CreateBotoesHeader(){
       </BreadcrumbItem>
 
       <BreadcrumbItem>
-        <BreadcrumbLink href='#'>Sobre</BreadcrumbLink>
+        <BreadcrumbLink href='#'>Receitas</BreadcrumbLink>
       </BreadcrumbItem>
 
       <BreadcrumbItem>

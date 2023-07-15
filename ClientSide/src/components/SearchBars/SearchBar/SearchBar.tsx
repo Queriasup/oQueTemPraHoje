@@ -6,7 +6,7 @@ export default function CriarSearchBar(){
     return(
         <div>
             <InputGroup size='md'>
-            <Input variant = 'filled' placeholder='Busque um ingrediente' />
+            <Input variant = 'filled' placeholder= 'placeholder' />
             <InputLeftElement pointerEvents='none'>
                 <BsSearch/>
             </InputLeftElement>

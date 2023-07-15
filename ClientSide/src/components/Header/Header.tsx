@@ -1,7 +1,7 @@
 import CreateBotoesHeader from "../BotoesHeader/BotoesHeader";
 import styles from "./Header.module.scss"
 
-export default function CreateHeader(){
+export default function CriarHeader(){
     return(
         <>
             <header className={styles.header}>
