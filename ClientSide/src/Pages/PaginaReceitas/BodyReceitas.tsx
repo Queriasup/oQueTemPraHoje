@@ -12,6 +12,7 @@ export default function CriarBodyReceitas(){
 
     const URL = 'http://localhost:3000/receitasEncontradas'
 
+    try {
     useEffect(() => {
 
     async function getReceitas() {
@@ -29,8 +30,11 @@ export default function CriarBodyReceitas(){
     }
     
     getReceitas()
-        
     }, []);
+
+    } catch (error) {
+        console.log('Error: ',error)
+    }
 
     return(
         <div className={styles.pagina}>

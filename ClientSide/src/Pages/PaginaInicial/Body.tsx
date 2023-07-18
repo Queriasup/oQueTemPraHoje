@@ -15,6 +15,8 @@
 
         const URL = 'http://localhost:3000/ingredientes'
 
+        try {
+
         useEffect(() => {
 
         async function getIngredientes() {
@@ -39,8 +41,11 @@
         getIngredientes()
         }, []);
 
-         
+      } catch (error) {
+        console.log('Erro ao tentar obter os ingredientes: ',error)
+      }
           const addCard = async ({ objeto }: any) => {
+            try {
             const cardExistente = cards.find((card) => card.codigo === objeto.codigo);
         
             if (!cardExistente) {
@@ -59,6 +64,9 @@
 
               await axios.post('http://localhost:3000/insertInDespensa', postData(objeto));
             }
+          } catch (error) {
+            console.log('Erro ao adicionar ingrediente na despensa: ',error)
+          }
           };
         
           const removeCard = async (objeto: any) => {

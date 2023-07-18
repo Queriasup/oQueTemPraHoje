@@ -9,6 +9,8 @@ export default function CriarBodyExibirReceita() {
     let { state: { objeto } } = useLocation();
     const [lista, setLista] = useState< any[]>([]);
 
+    try {
+
     useEffect(() => {
 
         async function getIngredientes() {
@@ -25,7 +27,10 @@ export default function CriarBodyExibirReceita() {
 
         }, []);
 
-      
+    } catch (error) {
+        console.log('Error: ',error)
+    }
+   
     console.log(objeto)
     return (
         <>
