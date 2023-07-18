@@ -1,7 +1,7 @@
 import { Card, CardBody, CardFooter, Image, Stack, Heading, Text, Button, Tag } from '@chakra-ui/react'
 import styles from './CardReceitaEncontrada.module.scss';
 
-export default function CriarCardReceitaEncontrada(){
+export default function CriarCardReceitaEncontrada({objeto}:any){
     
     return(
         <Card
@@ -18,11 +18,10 @@ export default function CriarCardReceitaEncontrada(){
 
             <Stack>
                 <CardBody>
-                    <Heading size='md'>Theu cu</Heading>
+                    <Heading size='md'>{objeto.nome}</Heading>
 
                     <Text py='2'>
-                        Caffè latte is a coffee beverage of Italian origin made with espresso
-                        and steamed milk.
+                       {objeto.resumo}
                     </Text>
                 </CardBody>
 
