@@ -14,7 +14,7 @@ export default function CriarCardDespensa( { objeto , removeCard }:any ){
                 <h2 className={styles.tituloCard}> { objeto.nome }</h2>
                 <div className={styles.quantidade}>
                     <h3 className={styles.quantidadeTexto}>{ objeto.unidade }</h3>
-                    <div>
+                    <div className={styles.input}>
                         <CriarInputSpinner/>
                     </div>
                 </div>

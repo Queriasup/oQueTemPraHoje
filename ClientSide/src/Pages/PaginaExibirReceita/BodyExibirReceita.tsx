@@ -28,10 +28,11 @@ export default function CriarBodyExibirReceita() {
       
     console.log(objeto)
     return (
-        <div className={styles.pagina}>
-            <CriarHeader />
+        <>
+        <CriarHeader />
+        <main className={styles.main}>
             <div className={styles.receita}>
-                <div className={styles.left}>
+                <div className={styles.divisorImgIngredientes}>
                     <div className={styles.imagem}>
                         <img src="https://fyoti.com.br/wp-content/uploads/2022/08/Receita-de-Bolo-de-chocolate-decorado.jpg" alt="imagem-receita" />
                     </div>
@@ -45,7 +46,7 @@ export default function CriarBodyExibirReceita() {
                         </ul>
                     </div>
                 </div>
-                <div className={styles.right}>
+                <div className={styles.textos}>
                     <div className={styles.textoReceita}>
                         <h2>{ objeto.nome }</h2>
                         <p>{ objeto.resumo }</p>
@@ -59,6 +60,7 @@ export default function CriarBodyExibirReceita() {
                     </div>
                 </div>
             </div>
-        </div>
+        </main>
+        </>
     )
 }

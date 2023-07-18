@@ -90,11 +90,14 @@
                                 <CriarCardDespensa key={objeto.codigo} objeto={objeto} removeCard={removeCard} />
                             ))}
                             </div>
+                            <div className={styles.botao}>
                             <Link to={'/ReceitasEncontradas'}>
                             <CriarBotao/>
                             </Link>
+                            </div>
                         </div>
                     </div>
+                    
                     <div className={styles.divisorAddIngredientes}>
                         <h2 className={styles.adicionarIngredientes}>Adicionar ingredientes</h2>
                         <div className={styles.searchBar}>
