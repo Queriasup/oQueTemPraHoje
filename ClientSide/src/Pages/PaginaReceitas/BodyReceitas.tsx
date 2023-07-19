@@ -22,11 +22,6 @@ export default function CriarBodyReceitas(){
             const receitasEncontradas = Response.data;
             setReceitas(receitasEncontradas)
         })
-
-    await axios.delete('localhost:3000/clearDespensa')
-    .then(Response1 => {
-        console.log(Response1)
-    })
     }
     
     getReceitas()
